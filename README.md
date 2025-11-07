@@ -6,6 +6,7 @@ DSC 180A Checkpoint
 ## Contents
 - `experiment.py` - Python script to reproduce the experiment  
 - `trial_config.json` - Trial configuration
+- `analysis.ipynb` - A preliminary analysis of the experiment results data. 
 - `data/results.csv` - Experiment results in CSV format
 - `data/results.xlsx` - Experiment results in Excel format
 - `data/results.jsonl` - Experiment results in JSONL format (one JSON object per line)
@@ -20,10 +21,6 @@ DSC 180A Checkpoint
    ```
 
 2. This experiment used a local version of [Ollama](https://ollama.com/) using GPT oss:20b and qwen3:14b
-
-### Analyzing Results
-
-A preliminary analysis of the results is in analysis.ipynb. 
 
 ## Notes
 
