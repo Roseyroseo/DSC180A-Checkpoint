@@ -9,6 +9,7 @@ DSC 180A Checkpoint
 - `data/results.csv` - Experiment results in CSV format
 - `data/results.xlsx` - Experiment results in Excel format
 - `data/results.jsonl` - Experiment results in JSONL format (one JSON object per line)
+- `Report.pdf` - A draft of our Q1 paper with some lit review and experiment methodology. 
 
 
 ### Running the Experiment
@@ -18,7 +19,7 @@ DSC 180A Checkpoint
    pip install requests
    ```
 
-2. This experiment used a local version of Ollama using GPT oss:20b and qwen3:14b
+2. This experiment used a local version of [Ollama](https://ollama.com/) using GPT oss:20b and qwen3:14b
 
 ### Analyzing Results
 
