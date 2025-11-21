@@ -1,6 +1,6 @@
 # Week 8 Quarter 1 Checkpoint 
 
-Rosey Gutierrez DSC 180A TA Checkpoint
+Rosey Gutierrez & Derrick Dollesin DSC 180A TA Checkpoint
 
 ## Experiment: Response Grading with Rubric & injection 
 
