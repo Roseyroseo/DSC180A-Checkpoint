@@ -1,27 +1,49 @@
-# Quarter 1 Checkpoint
+# Week 8 Quarter 1 Checkpoint 
 
-Rosey Gutierrez & Derrick Dollesin 
-DSC 180A Checkpoint
+Rosey Gutierrez DSC 180A TA Checkpoint
+
+## Experiment: Response Grading with Rubric & injection 
 
 ## Contents
-- `experiment.py` - Python script to reproduce the experiment  
-- `trial_config.json` - Trial configuration
-- `analysis.ipynb` - A preliminary analysis of the experiment results data. 
-- `data/results.csv` - Experiment results in CSV format
-- `data/results.xlsx` - Experiment results in Excel format
-- `data/results.jsonl` - Experiment results in JSONL format (one JSON object per line)
-- `Report.pdf` - A draft of our Q1 paper with some lit review and experiment methodology. 
 
+- `Folder: Week 5 Checkpoint` - Folder with code from a previous experiment for the Week 5 checkpoint.
+- `Folder: Week 8 Checkpoint` - Folder with code from a more recent experiment for the Week 8 checkpoint. 
+- `experiment.py` - Python script executable. Requires OpenRouter API key and a local install of Ollama with gpt-oss and qwen.    
+- `analysis.ipynb` - Blank output jupyter notebook to reproduce results from the experiment. Should be able to run this after running experiment.py and getting the .csv data from it. Week 8 Checkpoint folder has full experiment notebook and data. 
 
-### Running the Experiment
+## 1. Install Dependencies
 
-1. Install required packages:
-   ```bash
-   pip install requests
-   ```
+**Required packages:**
+```bash
+pip install httpx aiometer aiosqlite jmespath tenacity tqdm pandas py-mini-racer
+```
 
-2. This experiment used a local version of [Ollama](https://ollama.com/) using GPT oss:20b and qwen3:14b
+**Optional packages** (for additional export formats):
+```bash
+pip install openpyxl    # For Excel export
+pip install pyarrow     # For Parquet export
+```
 
-## Notes
+### 2. Set API Keys (Required)
 
-As different experiments are conducted every other week or so, this is just an example that pertains to the data from an experiment from Week 4. The Report highlights the methodology we use for every experiment. 
+API keys **must** be set as environment variables:
+
+```bash
+export OPENAI_API_KEY="sk-..."
+export ANTHROPIC_API_KEY="sk-ant-..."
+export OPENROUTER_API_KEY="sk-or-..."
+# Add any other providers your experiment uses
+```
+
+The script checks all required keys upfront and will exit if any are missing.
+
+### 3. Run the Experiment
+
+**Basic usage:**
+```bash
+python experiment.py
+```
+
+### 4. Run Analysis
+
+Rename .csv file to just `results.csv` for the notebook to work properly.
